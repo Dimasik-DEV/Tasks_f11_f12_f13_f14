@@ -1,6 +1,6 @@
 # Задача 1.3. Реализовать итерационную функцию (Вариант 30).
 
-def func(n, m):
+def f13(n, m):
     res_1 = 0
     res_2 = 0
 
@@ -12,9 +12,5 @@ def func(n, m):
     return 69 * (res_1 + res_2)
 
 
-def out(n, m):
-    print('f(', n, ',', m, ') = %.2e' % func(n, m), sep='')
-
-
-out(41, 37)
-out(28, 52)
+print('%.2e' % f13(41, 37))
+print('%.2e' % f13(28, 52))

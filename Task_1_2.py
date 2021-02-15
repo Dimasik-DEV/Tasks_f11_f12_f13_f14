@@ -1,6 +1,6 @@
 # Задача 1.2. Реализовать кусочно-линейную функцию (Вариант 30).
 
-def func(x):
+def f12(x):
     if x < 73:
         f = x ** 5 - x ** 6
     elif 73 <= x < 115:
@@ -10,9 +10,5 @@ def func(x):
     return f
 
 
-def out(x):
-    print('f(', x, ') = %.2e' % func(x), sep='')
-
-
-out(47)
-out(42)
+print('%.2e' % f12(47))
+print('%.2e' % f12(42))

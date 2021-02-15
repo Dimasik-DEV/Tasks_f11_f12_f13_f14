@@ -3,14 +3,10 @@
 import math
 
 
-def func(x):
+def f11(x):
     f = x ** 5 - x ** 6 - math.sqrt((12 * x ** 6 - 40 * x + 73) / (x ** 5 - x ** 7 + 45)) - (x ** 7 + 16 * x ** 6)
     return f
 
 
-def out(x):
-    print('f(', x, ') = %.2e' % func(x), sep='')
-
-
-out(-17)
-out(0)
+print('%.2e' % f11(-17))
+print('%.2e' % f11(0))
